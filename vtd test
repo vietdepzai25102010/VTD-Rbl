@@ -17,80 +17,69 @@ UICorner.CornerRadius = UDim.new(1, 10)
 UICorner.Parent = ImageButton
 
 ImageButton.MouseButton1Down:Connect(function()
-    game:GetService("VirtualInputManager"):SendKeyEvent(true, Enum.KeyCode.End, false, game)
+    game:GetService("VirtualInputManager"):SendKeyEvent(true, Enum.KeyCode.End, false, game)
 end)
 
 local Fluent = loadstring(game:HttpGet("https://github.com/dawid-scripts/Fluent/releases/latest/download/main.lua"))()
 repeat wait() until game:IsLoaded()
 local Window = Fluent:CreateWindow({
-    Title = "VTD Roblox Tổng Hợp",
-    SubTitle = "Blox Fruit",
-    TabWidth = 157,
-    Size = UDim2.fromOffset(450, 300),
-    Acrylic = true,
-    Theme = "Amethyst",
-    MinimizeKey = Enum.KeyCode.End
+    Title = "VTD Roblox Tổng Hợp",
+    SubTitle = "Blox Fruit",
+    TabWidth = 157,
+    Size = UDim2.fromOffset(450, 300),
+    Acrylic = true,
+    Theme = "Amethyst",
+    MinimizeKey = Enum.KeyCode.End
 })
 local Tabs = {
-        Main0=Window:AddTab({ Title="Thông Tin" }),
-        Main1=Window:AddTab({ Title="Script Farm" }),
-        Main2=Window:AddTab({ Title="Farm Fruit" }),
-        Main3=Window:AddTab({ Title="Farm Chest" }),
-        Main4=Window:AddTab({ Title="Script Hop" }),
-       Main5=Window:AddTab({ Title="vtd" }),
+        Main0=Window:AddTab({ Title="Thông Tin" }),
+        Main1=Window:AddTab({ Title="Script Farm" }),
+        Main2=Window:AddTab({ Title="Farm Fruit" }),
+        Main3=Window:AddTab({ Title="Farm Chest" }),
+        Main4=Window:AddTab({ Title="Script Hop" }),
+       Main5=Window:AddTab({ Title="vtd" }),
 }
-    Tabs.Main0:AddButton({
-    Title = "Discord",
-    Description = "VTD Roblox Community",
-    Callback = function()
-        setclipboard("https://discord.gg/qEkEHgkQ")
-    end
+    Tabs.Main0:AddButton({
+    Title = "Discord",
+    Description = "VTD Roblox Community",
+    Callback = function()
+        setclipboard("https://discord.gg/qEkEHgkQ")
+    end
 })
 
-    Tabs.Main0:AddButton({
-    Title = "Youtuber",
-    Description = "VTD Roblox",
-    Callback = function()
-        setclipboard("http://www.roblox.com/asset/?id=83190276951914")
-    end
+    Tabs.Main0:AddButton({
+    Title = "Youtuber",
+    Description = "VTD Roblox",
+    Callback = function()
+        setclipboard("http://www.roblox.com/asset/?id=83190276951914")
+    end
 })
 
-    Tabs.Main0:AddButton({
-    Title = "Youtuber",
-    Description = "VTD Roblox",
-    Callback = function()
-        setclipboard("http://www.roblox.com/asset/?id=83190276951914")
-    end
+    Tabs.Main0:AddButton({
+    Title = "Youtuber",
+    Description = "VTD Roblox",
+    Callback = function()
+        setclipboard("http://www.roblox.com/asset/?id=83190276951914")
+    end
 })
-    
-    Tabs.Main1:AddButton({
-    Title="Redz Hub",
-    Description="",
-    Callback=function()
-  local Settings = {
-  JoinTeam = "Pirates"; -- Pirates/Marines
-  Translator = true; -- true/false
+    
+    Tabs.Main1:AddButton({
+    Title="Redz Hub",
+    Description="",
+    Callback=function()
+	  local Settings = {
+  JoinTeam = "Pirates"; -- Pirates/Marines
+  Translator = true; -- true/false
 }
 
 loadstring(game:HttpGet("https://raw.githubusercontent.com/newredz/BloxFruits/refs/heads/main/Source.luau"))(Settings)
-  end
+  end
 })
 
 Tabs.Main1:AddButton({
-    Title="w azure Hub",
-    Description="",
-    Callback=function()
-  loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/85e904ae1ff30824c1aa007fc7324f8f.lua"))()
-  end
-})    
-    AddButton(Tab1o, {
-     Name = "Redz Hub",
-    Callback = function()
-  local Settings = {
-  JoinTeam = "Pirates"; -- Pirates/Marines
-  Translator = true; -- true/false
-}
-
-loadstring(game:HttpGet("https://raw.githubusercontent.com/realredz/BloxFruits/refs/heads/main/Source.lua"))(Settings)
-  end
-  })
+    Title="w-azure Hub",
+    Description="",
+    Callback=function()
+	  loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/85e904ae1ff30824c1aa007fc7324f8f.lua"))()
+  end
+})
